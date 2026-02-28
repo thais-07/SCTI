@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>thais</title>
 </head>
 <body>
     <header>
-        <h1>Thais</h1>
+        <h1 style="color: rgb(47, 106, 136);">Thais</h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre mim</a> <br> </li>
@@ -19,15 +20,15 @@
     </header>
 
     <section id="sobre">
-        <h2>Sobre mim</h2>
+        <h2 id="mim">Sobre mim</h2>
         
         <img src="imagemM.png" alt="imagem da foto" title="imagem de perfil de thais">
-        
+
+
         <article>
-            <p>
-            Olá! meu nome é Thais de oliveira Correa sou estudante do Instituto 
-            Federal de Santa Catarina da cidade de Chapecó
-            </p>
+            <p class="apre">Olá meu nome é Thais de Oliveira Correa sou estudante de TI no Instituto Federal 
+            de Santa Catarina na cidade de Chapecó. Sou iniciante no desenvolvimento web,
+            sou familiarizada em algumas estruturas como: python, C, e CSS e html. </p>
         </article>
 
         <aside>
@@ -42,7 +43,7 @@
 <section id="projeto">
     <h2>Projetos</h2>
     <article>
-        <h3>Portifólios</h3>
+        <h3 id="port">Portifólios</h3>
         <p>Esse foi o primeiro que desenvolvi, estudando front-end
         </p>
     </article>
@@ -51,9 +52,9 @@
 
 <section id="habilidades">
     <h2> Habilidades e tecnologias</h2>
-    <table>
+    <table >
 
-        <thead>
+        <thead class="apre">
             <tr>
                 <th>Tecnologia</th>
                 <th>Nível</th>
@@ -111,40 +112,61 @@
              </select>
 
              <br>
+            <br>
 
              <label for="mensagem">Mensagem:</label>
-             <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea>
+             <textarea name="mensagem" id="mensagem" cols="20" rows="1" required></textarea>
              
              <br>
 
              <input type="checkbox"  id="inscricao" name="inscricao">
              <label for="inscricao">Deseja receber minha newletter?Fique por dentro.</label>
-             
              <br>
-
-             <input type="submit" value="Enviar mensagem">
-             
              <br>
-
         
              <form action="">
 
                 <label for="nome">Nome completo:</label>
                 <input type="text" id="nome" name="nome" required> <br>
-
+<br>
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required> <br>
-
+<br>
                 <label for="idade">Idade:</label>
                 <input type="ida" name="idade" id="idade" required> <br>
+<br>
+                <label for="candidatura"> Matéria: </label>
+                <select name="materia" id="materia" required>
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+                <option value="biologia">Biologia</option>
+                <option value="ciencias">Ciências</option>
+                <option value="historia">História</option>
+                <option value="geografia">Geografia</option>
+                </select> <br>
+<br>
+                <label for="nivel">Nível Escolaridade:</label>
+                <select name="nivel" id="nivel" required>
+                <option value="superiorc">Ensino Superior Completo</option>
+                <option value="cursomestra">Cursando Mestrado</option>
+                <option value="mestracomple">Mestrado Completo</option>
+                <option value="cursodoutor">Cursando Doutorado</option>
+                <option value="dutorcomple">Doutorado Completo</option>
 
-                <label for="candidatura"> Candidatura/Materia</label>
-                <input type="candi" name="candidatura" id="candidatura">
+                </select>
+                <br>
+                <br>
 
-
+                <label for="turnos">Turnos Disponíveis:</label>
+                <select name="turnos" id="turnos" >
+                <option value="matutino">Matutino</option>
+                <option value="vespertino">Vespertino</option>
+                <option value="integral">Integral</option>
                 
+                </select>
+                <input type="submit" value="Enviar mensagem">
 
-
+                <br>
              </form>
 
 

@@ -1,0 +1,26 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color:black;
+}
+
+div{
+    height: 200px;
+    color: rgb(6, 6, 6);
+}
+#mim{
+    font-weight: bold;
+}
+.apre{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(10, 16, 21);
+    font-weight: bold;
+}
+h3,h2{
+    color: rgb(7, 71, 124);
+}
+#port{
+    color: rgb(73, 5, 137);
+}
