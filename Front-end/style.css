@@ -1,26 +1,119 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
-}
+    text-align: center;
+    background-color: rgb(158, 228, 232);
+    
+} /* inclui todos os elementos da página*/
 
-a{
-    color:black;
-}
 
-div{
-    height: 200px;
-    color: rgb(6, 6, 6);
-}
-#mim{
-    font-weight: bold;
-}
-.apre{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(10, 16, 21);
-    font-weight: bold;
-}
-h3,h2{
-    color: rgb(7, 71, 124);
+#perfil{
+color: rgb(117, 162, 202);
+border: 2px solid rgb(243, 237, 237);
+margin: 20px;
+padding: 20px;
+background-color: rgb(21, 78, 108);
+display: block;
+height: 50px;
 }
 #port{
-    color: rgb(73, 5, 137);
+    font-size: 20px;
+}
+
+
+tr > th{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(136, 162, 175);
+    font-size: 20px;
+    border: solid 1px rgb(12, 12, 13);
+    background-color: rgb(18, 47, 63);
+    
+} /*inclui apena o elemento com a class específica*/
+
+
+tr > td{
+    color: black;
+    font-size: larger;
+    margin: 10px;
+    padding: 6px;
+    border: 2px solid black;
+    font-weight: bold;
+    background-color: rgb(83, 82, 81);
+}
+
+h3,h2{
+    color: rgb(117,162,202);
+    font-size: 27px;
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid rgb(243, 245, 246);
+    background-color: rgb(26, 119, 147);
+    display: block; 
+} /*inclui todos os elementos h2 e h3*/
+
+
+nav > a { /* seletor avançado filho */
+    color: rgb(30, 38, 42);
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgb(117, 162, 208);
+    margin: 20px;
+    display: inline-table;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    
+}
+
+
+ul a{ /* seletor decendente*/
+    color: rgb(43, 126, 174);
+} 
+
+#di{
+    font-weight: bold;
+    color: rgb(49, 121, 198);
+}
+
+form{
+    color: rgb(23, 62, 130);
+    font-weight: bold;
+    
+}
+
+input{
+    background-color: white;
+}
+#b{
+    border: 2px solid rgb(225, 228, 232);
+    font-size:13px;
+    font-weight: bold;
+    background-color: rgb(58, 125, 196);
+}
+
+
+#imagem{
+    width: 300px;
+    border: 2px solid rgb(8, 31, 95);
+    height: 220px;
+    padding: 30px;
+    background-color: rgb(7, 5, 5);
+    margin: 30px;
+}
+p{
+    font-weight: bold;
+    color: rgb(21, 78, 108);
+}
+#mensagem{
+    border: 2px solid rgb(12, 12, 12);
+    background-color: white;
+}
+.assunto{
+    border: 3px solid rgb(21, 78, 108);
+}
+select > option{
+    border: 3px;
+    background-color: rgb(104, 174, 228);
+}
+tbody{
+    border: 1px solid black;
 }

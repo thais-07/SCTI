@@ -4,41 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>thais</title>
+    <title>Página de Thais</title>
 </head>
 <body>
     <header>
-        <h1 style="color: rgb(47, 106, 136);">Thais</h1>
+        <h1 class="perfil"  id="perfil" title="site da thais" >Site de Thais</h1>
         <nav>
-            <ul>
-                <li><a href="#sobre">Sobre mim</a> <br> </li>
-                <li> <a href="#projeto">Projetos</a> </li>
-                <li> <a href="#contato">Contatos</a> </li>
-                <li> <a href="https://google.com.br/" target="_blank">Google</a> </li>
-            </ul>
+                <a href="#sobre" >Sobre mim</a> 
+                <a href="#projeto">Projetos</a> 
+                <a href="#contato">Contatos</a> 
+                 <a href="https://google.com.br/" target="_blank">Google</a>
         </nav>
     </header>
 
     <section id="sobre">
         <h2 id="mim">Sobre mim</h2>
         
-        <img src="imagemM.png" alt="imagem da foto" title="imagem de perfil de thais">
+        <img src="imagemM.png" id="imagem"  alt="imagem da foto" title="imagem de perfil de thais">
 
 
         <article>
-            <p class="apre">Olá meu nome é Thais de Oliveira Correa sou estudante de TI no Instituto Federal 
+            <p >Olá meu nome é Thais de Oliveira Correa sou estudante de TI no Instituto Federal 
             de Santa Catarina na cidade de Chapecó. Sou iniciante no desenvolvimento web,
-            sou familiarizada em algumas estruturas como: python, C, e CSS e html. </p>
+            sou familiarizada em algumas estruturas como: C, CSS e html. </p>
         </article>
 
-        <aside>
         <h3>Habilidades</h3>
-            <ul>
-                <li>CSS</li>
-                <li>Html</li>
-                <li>JavaScript</li>
-            </ul>
-        </aside>
+        <p> CSS</p>
+        <p>HTML</p>
+        <p>JavaScript</p>
+    
 </section>
 <section id="projeto">
     <h2>Projetos</h2>
@@ -54,7 +49,7 @@
     <h2> Habilidades e tecnologias</h2>
     <table >
 
-        <thead class="apre">
+        <thead >
             <tr>
                 <th>Tecnologia</th>
                 <th>Nível</th>
@@ -87,26 +82,26 @@
 </section>
 
 <footer>
-    <p>Direitos reservados a thais</p>
+    <p id="di">Direitos reservados a thais</p>
 
     <section id="contato">
 
         <h2>Contatos</h2>
-        <p>Tem um projeto em mente? Entre em contato</p>
+        <p>Tem um projeto em mente? Entre em contato.</p>
        
             <form action="">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required> <br>
-
+<br>
             <label for="email">E-mail: </label>
             <input type="email" id="email" name="email" required> <br>
-
+<br>
             <label for="telefone">Telefone</label>
             <input type="tel" id="telefone" name="telefone" ><br>
-
-            <label for="assunto">Assunto: </label>
-            <select name="assunto" id="assunto">
-             <option value=" orcamento">Orçamento</option>
+<br>
+            <label   for="assunto">Assunto: </label>
+            <select name="assunto" class="ass" >
+             <option value=" orcamento" >Orçamento</option>
              <option value=" duvida">Dúvida</option>
              <option value=" outro">Outro</option>
              </select>
@@ -114,8 +109,8 @@
              <br>
             <br>
 
-             <label for="mensagem">Mensagem:</label>
-             <textarea name="mensagem" id="mensagem" cols="20" rows="1" required></textarea>
+             <label  class="mensagem" for="mensagem">Mensagem:</label>
+             <textarea name="mensagem" id="mensagem" cols="60" rows="1" required></textarea>
              
              <br>
 
@@ -123,7 +118,7 @@
              <label for="inscricao">Deseja receber minha newletter?Fique por dentro.</label>
              <br>
              <br>
-        
+             
              <form action="">
 
                 <label for="nome">Nome completo:</label>
@@ -136,7 +131,7 @@
                 <input type="ida" name="idade" id="idade" required> <br>
 <br>
                 <label for="candidatura"> Matéria: </label>
-                <select name="materia" id="materia" required>
+                <select name="materia" class="assunto" required>
                 <option value="matematica">Matemática</option>
                 <option value="portugues">Português</option>
                 <option value="biologia">Biologia</option>
@@ -146,7 +141,7 @@
                 </select> <br>
 <br>
                 <label for="nivel">Nível Escolaridade:</label>
-                <select name="nivel" id="nivel" required>
+                <select name="nivel" class="assunto" required>
                 <option value="superiorc">Ensino Superior Completo</option>
                 <option value="cursomestra">Cursando Mestrado</option>
                 <option value="mestracomple">Mestrado Completo</option>
@@ -158,31 +153,21 @@
                 <br>
 
                 <label for="turnos">Turnos Disponíveis:</label>
-                <select name="turnos" id="turnos" >
+                <select name="turnos" class="assunto">
                 <option value="matutino">Matutino</option>
                 <option value="vespertino">Vespertino</option>
                 <option value="integral">Integral</option>
                 
                 </select>
-                <input type="submit" value="Enviar mensagem">
+                <br>
+                <br>
+                <input id="b" type="submit" value="Enviar mensagem">
 
                 <br>
              </form>
-
-
-
     </section>
+
 </footer>
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
