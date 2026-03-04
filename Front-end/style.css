@@ -12,7 +12,6 @@ border: 2px solid rgb(243, 237, 237);
 margin: 20px;
 padding: 20px;
 background-color: rgb(21, 78, 108);
-display: block;
 height: 50px;
 }
 #port{
@@ -90,13 +89,10 @@ input{
     background-color: rgb(58, 125, 196);
 }
 
-
 #imagem{
     width: 300px;
-    border: 2px solid rgb(8, 31, 95);
     height: 220px;
     padding: 30px;
-    background-color: rgb(7, 5, 5);
     margin: 30px;
 }
 p{
@@ -116,4 +112,56 @@ select > option{
 }
 tbody{
     border: 1px solid black;
+}
+.absoluto{
+    position: absolute;
+    height: 50px;
+    background-color: blue;
+    bottom: 0px;
+    right: 10px;
+    width: 100px;
+}
+.fixed{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: blueviolet;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    grid-gap: 20px; /* espaçamento entre os itens*/
+    border: 4px solid black;
+    padding: 20px;
+    display: inline-block;
+    
+}
+#item{
+    background-color: lightblue;
+    
+}
+.he{
+    background-color: brown;
+ padding: 20px;
+ grid-column: 1 /-1;
+}
+
+
+.sidebar{
+    background-color: rgb(92, 63, 28);
+ padding: 20px;
+}
+
+.content{
+ padding: 20px;
+    background-color: blue;
+}
+
+.contai{
+    display: grid;
+    grid-template-columns: 1fr 3fr  ;
+    grid-template-rows: auto ;
 }
