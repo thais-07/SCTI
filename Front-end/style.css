@@ -130,38 +130,86 @@ tbody{
     background-color: blueviolet;
 
 }
-.container{
-    display: grid;
-    grid-template-columns: 1fr 3fr ;
-    grid-gap: 20px; /* espaçamento entre os itens*/
-    border: 4px solid black;
-    padding: 20px;
-    display: inline-block;
-    
-}
-#item{
-    background-color: lightblue;
-    
-}
+
+/*Cabeçalho da aula de grid*/
 .he{
     background-color: brown;
- padding: 20px;
- grid-column: 1 /-1;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.menu{
+    background-color: aqua;
+    padding: 9px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.conteudo{
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    
+    
+}
+.con{
+    padding: 20px;
+    border: solid 1px white;
+    background-color: chartreuse;
+    height: 100px;
 }
 
+.sid{
+    margin-left: 500px;
+
+}
 
 .sidebar{
     background-color: rgb(92, 63, 28);
  padding: 20px;
+
+
 }
 
 .content{
- padding: 20px;
+ padding: 10px;
     background-color: blue;
+
 }
 
-.contai{
-    display: grid;
-    grid-template-columns: 1fr 3fr  ;
-    grid-template-rows: auto ;
+.footer{
+    background-color: bisque;
+    grid-column: 1/-1;
+    padding: 20px;
+    margin-top: 5px;
 }
+
+/*exemplos de flexbox -->*/
+.container{
+    background-color: rgb(57, 7, 194);
+    font-size: larger;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    
+    
+    
+}
+.box{
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+#box1{
+    background-color: rgb(219, 122, 19);
+    flex-grow: 1;
+}
+#box2{
+    background-color: brown;
+    flex-grow: 1;
+}
+#box3{
+    background-color: rgb(20, 180, 74);
+    flex-grow: 1;
+    }
